@@ -1,0 +1,78 @@
+body{
+    background-color: #000000;
+}
+.Nav {
+    margin: 0;
+    padding: 0;
+
+    background-color: #000000;
+    position: fixed;
+    overflow: auto;
+    font-family: "Yu Gothic UI Semibold";
+}
+.Nav a {
+    display: block;
+    padding: 20px;
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.Nav a.active {color: #ff0000;}
+.Nav a:hover:not(.active) {
+    background-color: #555;
+    color: #ff0000;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+.dropbender {
+    display: none;
+}
+.fas fa-genderless Menu{
+    display: none;
+}
+.dropbender:hover .text2 {
+    display: block;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .dropbender {
+        position: relative;
+        display: inline-block;
+    }
+    .fas fa-genderless Menu {
+        color: white;
+        display: inline-block;
+        position: fixed;
+        font-size: 25px;
+        margin-top: 25px;
+        margin-right: 30px;
+    }
+    .text1 {
+        display: none;
+    }
+    .text2 {
+        display: none;
+        position: fixed;
+        background-color: #181818;
+        min-width: 160px;
+        padding: 12px 16px;
+        margin-top: 40px;
+    }
+    .Nav {
+        width: 100%;
+        height: auto;
+        position: fixed;
+    }
+
+    .Nav a {
+        display: inline-block
+    }
+    .dropbender:hover .text2 {
+        display: block;
+    }
+}
